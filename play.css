@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+#homepage {
+    background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(50, 50, 190)), url(img/image01.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.homepage-text {
+    text-align: center;
+    color: #fff;
+    padding-top: 180px;
+}
+
+.homepage-text h1 {
+    font-size: 130px;
+    font-family: 'Lobster', cursive;
+}
+
+.homepage-text p {
+    font-size: 30px;
+    font-style: italic;
+}
+
+#title {
+    color: red;
+}
+
+#director {
+    color: yellow;
+}
+
+#invitation {
+    color: rgb(0, 255, 208);
+}
+
+.homepage-button {
+    margin: 70px auto 0;
+}
+
+.button {
+    background-color: #fff;
+    border: 2px solid #422800;
+    border-radius: 30px;
+    box-shadow: #422800 4px 4px 0 0;
+    color: blue;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button:hover {
+    background-color: blue;
+    color: #fff;
+}
+
+.button:active {
+    box-shadow: #422800 2px 2px 0 0;
+    transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+    .button {
+        min-width: 120px;
+        padding: 0 25px;
+    }
+}
+
+#side-navbar {
+    width: 120px;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: ;
+}
