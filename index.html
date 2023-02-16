@@ -5,34 +5,161 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="play.css">
-    <title>Playground Studios</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="utilities.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Come Play With Me
+    </title>
 </head>
 
 <body>
-    <section id="homepage">
-        <div class="homepage-text">
-            <h1>Playground Studios</h1>
-            <p> Presenting <span id="title">Come Play with Me</span> </p>
-            <p>An award winning movie by the renowned <span id="director"> film Director Ricky. </span> </p>
-            <p>This is where you find your inner child. <span id="invitation">Come on a journey to the playground. </span></p>
-            <div class="homepage-button">
-                <a class="button" href="#">Watch Now</a>
-                <a class="button" href="#">Read More</a>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="container flex bg-primary">
+            <!-- Logo -->
+            <h1 class="logo">Playground Studios</h1>
+
+            <!-- Menu -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#showcase-id">Reviews</a></li>
+                    <li><a href="#overview-id">Overview</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+
+
+    <!-- Showcase -->
+    <section id="showcase-id" class="showcase">
+        <div class="container grid bg-primary ">
+            <div class="showcase-text">
+                <h1>Come Play With Me</h1>
+                <p>An award winning movie by the renowned film Director Ricky. This is where you find your inner child. Come on a journey to the playground</p>
+                <a href="#film-id" class="btn btn-outline">Watch Now</a>
+            </div>
+            <div class="panel showcase-carousel card">
+                <div class="slide-show">
+                    <div>
+                        <i id="prev" class="fa-solid fa-arrow-left fa-2x"></i>
+                    </div>
+                    <div>
+                        <img id="carousel" src='https://i.postimg.cc/4yNHfKFF/cropped-1.jpg' alt="playground">
+                    </div>
+                    <div>
+                        <i id="next" class="fa-solid fa-arrow-right fa-2x"></i>
+                    </div>
+                </div>
+                <div class="dots">
+                    <div> <i id="dot0" class="fa-solid fa-circle"></i></div>
+                    <div> <i id="dot1" class="fa-solid fa-circle"></i></div>
+                    <div> <i id="dot2" class="fa-solid fa-circle"></i></div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!--Reviews-->
+    <section class="reviews flex">
+        <div class="container">
+            <h1 class="reviews-heading text-center my-1"> Reviews</h1>
+            <div class="grid grid-3 text-center my-4 ">
+                <div>
+                    <i class="fa-solid fa-user fa-3x"></i>
+                    <h3>Taylor Swift</h3>
+                    <p class="text-secondary">Oh my gosh, y'all, I just saw the movie about the playground and it was just the sweetest thing ever!</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-user fa-3x"></i>
+                    <h3>Trevor Noah</h3>
+                    <p class="text-secondary">I was transported back to my childhood, and the way the film takes you on a journey through the playground is just magical.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-user fa-3x"></i>
+                    <h3>Andrew Hamilton</h3>
+                    <p class="text-secondary">'Come Play with Me' is a must-see! It's sure to bring a sense of joy to your heart.</p>
+                </div>
             </div>
         </div>
     </section>
-    <div id="side-navbar">
-        <nav>
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">WATCH NOW</a></li>
-                <li><a href="#">OVERVIEW</a></li>
-                <li><a href="#">REVIEWS</a></li>
-            </ul>
-        </nav>
 
-    </div>
+
+    <!--Video -->
+    <section id="film-id" class="film cloud bg-primary my-5 py-5">
+        <h2>Click on Play to be transported back to childhood!</h2>
+        <div class="container grid">
+            <div class="card ">
+                <div class="video"> <iframe src="https://drive.google.com/file/d/1yzk-0TO31zZ5_Iv-OnEvrYmgt2GN_GAG/preview" width="640" height="480" allow="autoplay"></iframe></div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--Overview -->
+    <section id="overview-id" class="overview cloud my-3 py-1">
+        <div class="container grid">
+            <h2>Overview</h2>
+            <div class="card ">
+                <div>
+                    <h3>PRODUCER</h3>
+                    <p>Playground Studios</p>
+                </div>
+                <div>
+                    <h3>WRITER</h3>
+                    <p>Docricky</p>
+                </div>
+                <div>
+                    <h3>DIRECTORS</h3>
+                    <p>Ricky and Evi Mansor </p>
+                </div>
+                <div>
+                    <h3>LOCATION</h3>
+                    <p>New York University Abu Dhabi</p>
+                </div>
+                <div>
+                    <h3>RELEASE DATE</h3>
+                    <p>29th January 2023</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Footer -->
+    <footer class="footer bg-dark py-5 ">
+        <div class="container grid grid-3">
+            <div class="logo">
+                <h1>Playground Studios</h1>
+                <p>Copyright &copy; 2023 </p>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#showcase-id">Reviews</a></li>
+                    <li><a href="#overview-id">Overview</a></li>
+                </ul>
+            </nav>
+
+            <div class="social">
+
+                <a href="http://www.github.com/eric-asare"><i class="fab fa-github fa-2x "></i></a>
+                <a href="http://www.facebook.com"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="http://www.instagram.com"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="http://www.twitter.com"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
