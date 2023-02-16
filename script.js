@@ -9,7 +9,7 @@ document.getElementById('next').addEventListener('click', () => {
 
     // show active image by color of the dot
     document.getElementById('dot' + prev).style.color = '#333'
-    document.getElementById('dot' + next).style.color = '#7F00FF'
+    document.getElementById('dot' + next).style.color = '#6a00d5'
 
     // update the current
     current = next;
@@ -24,7 +24,7 @@ document.getElementById('prev').addEventListener('click', () => {
     next = current % (images.length)
 
     // show active image by color of the dot
-    document.getElementById('dot' + prev).style.color = '#7F00FF'
+    document.getElementById('dot' + prev).style.color = '#6a00d5'
     document.getElementById('dot' + next).style.color = '#333'
     current = prev;
     console.log(prev, current, next)
